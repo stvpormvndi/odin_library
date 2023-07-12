@@ -1,0 +1,37 @@
+:root {
+    --PADDING-HEADER: 1rem 0 2rem 0;
+    --PADDING-FOOTER: 1rem 0 1rem 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 2px black solid;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    padding: var(--PADDING-HEADER);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    border-top: 2px solid black;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: var(--PADDING-FOOTER);
+}
