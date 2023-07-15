@@ -11,13 +11,38 @@
     <header class="header" id="header">
         <h1 id="main_title" class="main_title">Odin Library</h1>
         <div class="filter_and_stats_button" id="filter_and_stats_buttons">
-            <button type="button" id="filter_button" class="button filter_button">Filter</button>
-            <button type="button" id="stats_button" class="button stats_button">Stats</button>
+            <button type="button" id="filter_button" class="header_button filter_button">Filter</button>
+            <button type="button" id="stats_button" class="header_button stats_button">Stats</button>
         </div>
     </header>
     <main class="book_storage" id="book_storage">
         <!--Books will be added dinamically-->
+        <div class="add_a_book_card card" id="add_a_book_card">
+            <svg class="plus-sign" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288m144-144H112"/></svg>
+        </div>
     </main>
+    <section class="add_book_section hidden" id="add_book_section">
+        <form action="#" id="add_book_form" class="add_book_form" method="POST">
+            <div class="book_title_container form_container">
+                <label for="book_title_input" class="book_title_label">Book Title</label>
+                <input type="text" class="book_title_input" id="book_title_input" placeholder="Book Title" name="book_title" required>
+            </div>
+            <div class="book_author_container form_container">
+                <label for="book_author_input" class="book_author_label">Book Author</label>
+                <input type="text" class="book_author_input" id="book_author_input" placeholder="Book Author" name="book_author" required>
+            </div>
+            <div class="number_of_pages_container form_container">
+                <label for="number_of_pages_input" class="number_of_pages_label">Number of pages</label>
+                <input type="number" class="number_of_pages_input" id="number_of_pages_input" placeholder="0" name="number_of_pages" min="0" max="5000">
+            </div>
+            <div class="classform_container have_you_read_it_radio_button form_container">
+                <label for="have_you_read_it_checkbox" class="have_you_read_it_label">Have you read It?</label>
+                <input type="checkbox" class="have_you_read_it_checkbox" id="have_you_read_it_checkbox" name="have_you_read_it" >
+            </div>
+            <button type="submit" class="add_book_button form_button" id="add_book_button">Add Book</button>
+            <button type="reset" class="reset_button form_button" id="reset_button">Reset</button>
+        </form>
+    </section>
     <footer>
         <h5 class="attribution" id="attribution">Made by <a href="https://github.com/stvpormvndi" class="developer_profile" id="developer_profile" target="_blank">stvpormvndi</a></h5>
     </footer>
