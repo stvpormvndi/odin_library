@@ -121,7 +121,6 @@ footer {
 
 .developer_profile:hover {
     color: var(--dark-text);
-    text-decoration: underline;
 }
 
 .add_book_section {
